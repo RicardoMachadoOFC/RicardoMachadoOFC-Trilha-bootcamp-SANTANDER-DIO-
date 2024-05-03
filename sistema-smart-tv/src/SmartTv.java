@@ -1,7 +1,7 @@
 public class SmartTv {
         boolean ligada = false;
         int canal = 1;
-        int volume = 25;
+        int volume = 20;
 
         public void aumentarVolume(){
             volume++;
@@ -27,4 +27,5 @@ public class SmartTv {
             canal = novoCanal;
         }
 
-        }
+        
+    }
