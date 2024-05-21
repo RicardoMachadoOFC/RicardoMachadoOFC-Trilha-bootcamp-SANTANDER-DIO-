@@ -1,22 +1,21 @@
-import java.util.Scanner;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        
-        Scanner input = new Scanner(System.in);
-        double salBase = 2000.00;
+        analisarCandidato(1900.0);
+        analisarCandidato(2200.0);
+        analisarCandidato(2000.0);
 
-        System.out.println("Digite sua pretensão salarial:");
-        float pretencao = input.nextFloat();
-
-        if(salBase > pretencao) {
-            System.out.println("LIGAR PARA CANDIDATO");
-        } else if(salBase == pretencao) {
-            System.out.println("LIGAR PARA O CANDIDATO COM CONTRA PROPOSTA");
-        } else {
-            System.out.println("Aguardando resultado dos demais candidatos");
-        }
         
-        input.close();
+
+    }
+        static void analisarCandidato(double salarioPretendido){
+        double salarioBase = 2000.0;
+        if(salarioBase > salarioPretendido){
+            System.out.println("LIGAR PARA O CANDIDATO");
+        }else if (salarioBase == salarioPretendido)
+            System.out.println("LIGAR PARA CANDIDATO COM CONTRA PROPOSTA");
+        else{
+            System.out.println("AGUARDANDO O RESULTADO DOS DEMAIS CANDIDATOS");
+            }
     }
 }
