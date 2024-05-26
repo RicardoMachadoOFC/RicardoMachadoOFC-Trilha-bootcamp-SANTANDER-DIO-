@@ -29,7 +29,7 @@ public class ProcessoSeletivo {
                     candidatosSelecionados++;
                 }
                 candidatoAtual++;
-            }
+            } 
         }
         static double valorPretendido(){
             return ThreadLocalRandom.current().nextDouble(1800, 2200);
